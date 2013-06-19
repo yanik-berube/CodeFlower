@@ -161,6 +161,9 @@ $ git ls-files | xargs wc -l > symfony.wc
         document.getElementById('visualization').scrollIntoView();
         createCodeFlower(json);
       });
+      
+      // by default show tunet-0014 data 
+      d3.json('data/tunet-0014.json', createCodeFlower);
     </script>
   </body>
 </html>
